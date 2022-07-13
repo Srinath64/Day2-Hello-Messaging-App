@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/hello")
 public class HelloRestController {
     //* UC - 1 ------------------>
-    @RequestMapping(value = {"", "/", "/home"})
+    @GetMapping(value = {"", "/", "/home"})
     public String sayHello() {
         return "Hello Everyone!!!";
     }
